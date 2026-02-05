@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import {getAllCharacters} from "./services/CharactersAPIServices";
-import Line from "./components/Line";
+import {getAllCharacters} from "../services/CharactersAPIServices";
+import Line from "./Line";
 
 const Characters = () => {
     const [characters, setCharacters] = useState([]);
@@ -26,6 +26,7 @@ const Characters = () => {
         </>
     )
 }
+export default Characters;
 
 
 /* Codigo de los apuntes de ANA
