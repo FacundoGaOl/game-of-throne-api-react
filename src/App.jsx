@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Characters from "./components/Characters.jsx";
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <Card></Card>
+    <Characters></Characters>
     </>
   )
 }
