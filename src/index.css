@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+body {
+  background-color: #3265b3;
+  background-image: url('./assets/pattern.svg');
+  background-size: cover;
+  margin: 0;
+}

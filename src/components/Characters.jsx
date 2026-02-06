@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {getAllCharacters} from "../services/CharactersAPIServices";
-import Line from "./Line";
+import Card from "./Card";
 
 const Characters = () => {
     const [characters, setCharacters] = useState([]);
@@ -20,7 +20,7 @@ const Characters = () => {
             </h1>
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 px-10">
                 {characters.map(character => (
-                <Line key={character.id} character={character}/>
+                <Card key={character.id} character={character}/>
                 ))}
             </ul>
         </>

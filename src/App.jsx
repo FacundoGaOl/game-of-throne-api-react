@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import Characters from "./components/Characters.jsx";
+import Characters from "./components/Characters.jsx"
+import Header from "./components/Header.jsx"
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+    <Header/>
     <Characters></Characters>
     </>
   )
