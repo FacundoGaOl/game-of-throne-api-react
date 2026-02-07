@@ -15,7 +15,7 @@ const Characters = () => {
 
     return (
         <>
-            <h1 className="text-3xl font-bold text-center mt-10">
+            <h1 className="text-3xl font-bold text-center mt-20">
                 Personajes
             </h1>
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 px-10">

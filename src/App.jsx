@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Header/>
-    <Characters></Characters>
+    <Characters/>
     </>
   )
 }
