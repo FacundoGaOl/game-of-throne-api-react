@@ -8,7 +8,8 @@ const Footer  = () => {
                             <h2 className="font-cinzel font-bold text-yellow-600">Game Of Thrones</h2>
                             <hr className="w-full border-t border-gray-600 mb-4"/>
                             <p>
-                            Proyecto académico desarrollado para el consumo de la <a className="text-yellow-600" href="https://thronesapi.com/">Thrones API</a>.
+                            Proyecto académico desarrollado para el consumo de la 
+                            <a className="text-yellow-600" href="https://thronesapi.com/">Thrones API</a>.
                             Visualización de personajes del universo creado por George R. R. Martin.
                             </p>
                         </div>
@@ -32,7 +33,9 @@ const Footer  = () => {
                         <p>Este proyecto no es oficial y se utiliza únicamente con fines educativos. 
                             Game of Thrones y sus personajes pertenecen a HBO® y George R. R. Martin.
                         </p>
-                        <p>© 2025 · Proyecto Game of Thrones · Equipo 3</p>
+                        <p className="text-sm text-gray-500 p-4 mb-6">
+                            © 2025 · Proyecto Game of Thrones · Equipo 3
+                        </p>
                     </div>
                 </section>
             </footer>
