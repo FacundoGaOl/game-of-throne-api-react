@@ -4,9 +4,18 @@ import Card from "./Card";
 
 const Characters = () => {
     const [characters, setCharacters] = useState([]);
+    const hiddenID = 7;
     const fetchCharacters = async() => {
-        const data = await getAllCharacters();
-        setCharacters(data);
+        try{
+            const data = await getAllCharacters();
+            const displayData = data.filter(data => data.id !== hiddenID);
+            setCharacters (displayData);
+            if (!response.ok){
+                throw new Error (`Error HTTP: ${response.status}`);
+            } return await response.json();
+        } catch(error){
+            return null;
+        }
     };
 
     useEffect(() => {
@@ -16,9 +25,6 @@ const Characters = () => {
     return (
         <>
             <section className="max-w-[1200px] w-full mx-auto px-2">
-                <h1 className="text-3xl font-bold text-center mt-20 text-white">
-                    Personajes
-                </h1>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 px-4">
                     {characters.map(character => (
                     <Card key={character.id} character={character}/>
