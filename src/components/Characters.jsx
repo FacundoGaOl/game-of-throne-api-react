@@ -15,11 +15,11 @@ const Characters = () => {
 
     return (
         <>
-            <section className="max-w-[1200px] w-full mx-auto px-4">
+            <section className="max-w-[1200px] w-full mx-auto px-2">
                 <h1 className="text-3xl font-bold text-center mt-20 text-white">
                     Personajes
                 </h1>
-                <ul className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 px-10">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 px-4">
                     {characters.map(character => (
                     <Card key={character.id} character={character}/>
                     ))}
