@@ -1,16 +1,63 @@
-# React + Vite
+# Game of Thrones API Explorer
+Una aplicación web interactiva construida con React 19 y Tailwind CSS 4 que consume la ThronesAPI para visualizar información detallada sobre los personajes y la geografía de Poniente y Essos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Despliegue en vivo: Visitar sitio en Vercel
 
-Currently, two official plugins are available:
+## ✨ Características Principales
+Explorador de Personajes: Visualización dinámica de personajes mediante tarjetas detalladas que incluyen nombre, título y casa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Normalización de Datos: Lógica personalizada para corregir errores ortográficos de la API (ej: "Lanister" a "Lannister") y asignar colores temáticos según la casa.
 
-## React Compiler
+Mapa Interactivo de Continentes: Representación visual de los continentes (Westeros, Essos, Sothoryos, Ulthos) con etiquetas posicionadas dinámicamente sobre un mapa.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Diseño Temático: Interfaz oscura inspirada en la estética de la serie, utilizando la tipografía Cinzel y colores heráldicos específicos para cada casa nobiliaria.
 
-## Expanding the ESLint configuration
+Responsive Design: Adaptabilidad completa para dispositivos móviles, tablets y escritorio mediante el sistema de grid de Tailwind.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Utilizadas
+Core: React 19
+
+Herramienta de Construcción: Vite 7
+
+Estilos: Tailwind CSS 4 (usando el nuevo motor @theme)
+
+Peticiones HTTP: Axios
+
+Fuentes: Google Fonts (Cinzel)
+
+## 📁 Estructura del Proyecto
+Plaintext
+src/
+├── components/          # Componentes reutilizables (Card, Header, Footer)
+├── services/            # Lógica de consumo de API (CharactersAPIServices)
+├── App.jsx              # Punto de entrada de la aplicación
+├── index.css            # Configuración global y temas de Tailwind 4
+└── main.jsx             # Renderizado principal
+public/
+└── images/              # Activos locales (Sigilos de casas y mapas)
+
+## ⚙️ Instalación y Configuración
+Si deseas ejecutar el proyecto localmente, sigue estos pasos:
+
+Clonar el repositorio:
+
+Bash
+git clone https://github.com/tu-usuario/game-api-react.git
+cd game-api-react
+Instalar dependencias:
+
+Bash
+npm install
+Ejecutar en modo desarrollo:
+
+## 🛡️ Detalles Técnicos Destacados
+Corrección de Familias: El componente Card.jsx incluye un motor de normalización que limpia los strings de la API (ej: elimina el prefijo "House") para asegurar que los sigilos e imágenes se carguen correctamente.
+
+Optimización de UI: Se filtran personajes específicos (como el ID 7) para gestionar inconsistencias en los datos de origen.
+
+Tematización Variable: Uso de variables CSS personalizadas en Tailwind 4 para gestionar los colores de identidad de las casas Stark, Lannister, Targaryen, entre otras.
+
+### 👥 Créditos
+Desarrollado por el Equipo 3 en JM Factoria.
+
+Aviso Legal: Proyecto con fines exclusivamente educativos. Los derechos de Game of Thrones pertenecen a HBO® y George R. R. Martin.
