@@ -6,5 +6,12 @@ body{
 }
 
 @theme {
-  --font-cinzel: "Cinzel", sans-serif; 
+  --font-cinzel: "Cinzel", sans-serif;
+  --color-stark: #9fc5e8;
+  --color-lannister: #b30000;
+  --color-baratheon: #e6c300;
+  --color-targaryen: #9C3205;
+  --color-baratheon: #e6c300 ;
+  --color-greyjoy: #777777 ;
+  --color-martell: #ff8c42 ;
 }

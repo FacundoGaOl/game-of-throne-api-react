@@ -2,19 +2,25 @@ import {useEffect, useState} from "react";
 import {getAllCharacters} from "../services/CharactersAPIServices";
 import Card from "./Card";
 
+
 const Characters = () => {
     const [characters, setCharacters] = useState([]);
     const hiddenID = 7;
-    const fetchCharacters = async() => {
-        try{
-            const data = await getAllCharacters();
-            const displayData = data.filter(data => data.id !== hiddenID);
-            setCharacters (displayData);
-            if (!response.ok){
-                throw new Error (`Error HTTP: ${response.status}`);
-            } return await response.json();
-        } catch(error){
-            return null;
+
+    const filterData = (data) => {
+        return data.filter(character => character.id !== hiddenID)
+    }
+
+    const fetchCharacters = async () => {
+        try {
+            const data = await getAllCharacters(); 
+            
+            if (data) {
+                const displayData = filterData(data);
+                setCharacters(displayData);
+            }
+        } catch (error) {
+            console.error("Error cargando personajes:", error);
         }
     };
 

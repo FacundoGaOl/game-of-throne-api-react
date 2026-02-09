@@ -8,7 +8,7 @@ const Footer  = () => {
                             <h2 className="text-xl font-cinzel font-bold text-yellow-600">Game Of Thrones</h2>
                             <hr className="w-full border-t border-gray-600 mb-4"/>
                             <p>
-                            Proyecto académico desarrollado para el consumo de la 
+                            Proyecto académico desarrollado para el consumo de la {""}
                             <a className="text-xl text-yellow-600" href="https://thronesapi.com/">Thrones API</a>.
                             Visualización de personajes del universo creado por George R. R. Martin.
                             </p>
