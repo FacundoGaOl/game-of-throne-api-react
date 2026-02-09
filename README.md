@@ -1,7 +1,9 @@
 # Game of Thrones API Explorer
 Una aplicación web interactiva construida con React 19 y Tailwind CSS 4 que consume la ThronesAPI para visualizar información detallada sobre los personajes y la geografía de Poniente y Essos.
 
-## 🚀 Despliegue en vivo: Visitar sitio en Vercel
+## 🚀 Despliegue en vivo: 
+
+https://game-of-throne-api-react.vercel.app/
 
 ## ✨ Características Principales
 Explorador de Personajes: Visualización dinámica de personajes mediante tarjetas detalladas que incluyen nombre, título y casa.
@@ -58,6 +60,6 @@ Optimización de UI: Se filtran personajes específicos (como el ID 7) para gest
 Tematización Variable: Uso de variables CSS personalizadas en Tailwind 4 para gestionar los colores de identidad de las casas Stark, Lannister, Targaryen, entre otras.
 
 ### 👥 Créditos
-Desarrollado por el Equipo 3 en JM Factoria.
+Desarrollado por Facundo siguiendo el trabajo del Equipo 3 en JM Factoria.
 
 Aviso Legal: Proyecto con fines exclusivamente educativos. Los derechos de Game of Thrones pertenecen a HBO® y George R. R. Martin.
